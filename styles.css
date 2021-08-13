@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+
+body {
+  	height: 1400px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    font-family: "Archivo", sans-serif;
+    color:  whitesmoke;
+    background-color: #03045E;
+    justify-content: flex-end;
+}
+
+.nav div {
+    display: flex 1;
+    font-size: 1em;
+    padding-top: 25px;
+    padding-right: 35px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    font-family: "Archivo", sans-serif;
+    color: whitesmoke;
+    background-color: #03045E;
+}
+
+.header div {
+    display: flex 1;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.site_title {
+    font-family: "Archivo Black";
+    font-size: 3.5em;
+    padding-top: 35px;
+}
+
+.subtitle {
+	font-size: 1.75em;
+	padding-bottom: 35px;
+}
+
+/*Mortality report -----------------------------------*/
+
+.mortality_report { 
+  display: flex;
+  color: whitesmoke;
+  background-color: #00A2E2;
+}
+
+.m_content {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding-right: 35px;
+}
+
+.image1 {
+  padding: 15px;
+}
+
+.mystyle1 {
+  width: 1000px;
+}
+
+.m_title {
+  font-size: 3.5em;
+  font-family: "Archivo Black", sans-serif;
+  padding-top: 35px;
+}
+
+.m_description {
+  font-size: 1.75em;
+  font-family: "Archivo", sans-serif;
+  padding-bottom: 25px;
+}
+
+/* New New Rom Bot -----------------------------------*/
+.rom_bot { 
+  display: flex;
+  color: #00A2E2;
+  background-color: white;
+  }
+
+.r_content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 35px;
+}
+
+.r_title {
+  font-size: 3.5em;
+  font-family: "Archivo Black", sans-serif;
+  padding-top: 35px;
+  
+}
+
+.r_description {
+  font-size: 1.75em;
+  font-family: "Archivo", sans-serif;
+}
+
+.image2 {
+  padding: 15px;
+}
+
+.mystyle2 {
+  width: 1000px;
+}
+
+/* About -----------------------------------*/
+.about { 
+  display: flex;
+  color: whitesmoke;
+  background-color: #03045E;
+}
+
+.a_content {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding-right: 35px;
+}
+
+.image3 {
+  padding-left: 15px;
+  margin-bottom: auto;
+}
+
+#about {
+  font-size: 3.5em;
+  font-family: "Archivo Black", sans-serif;
+  padding-top: 30px;
+}
+
+.a_description {
+  font-size: 1.75em;
+  font-family: "Archivo", sans-serif;
+}

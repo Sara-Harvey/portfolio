@@ -6,7 +6,7 @@ body {
   	height: 1400px;
 }
 
-.nav {
+#nav {
     display: flex;
     flex-direction: row;
     font-family: "Archivo", sans-serif;
@@ -15,7 +15,7 @@ body {
     justify-content: flex-end;
 }
 
-.nav div {
+#nav div {
     display: flex 1;
     font-size: 1em;
     padding-top: 25px;
@@ -117,6 +117,15 @@ body {
 }
 
 /* About -----------------------------------*/
+
+.menu_link {
+  font-family: "Archivo", sans-serif;
+  font-size: 1.5em;
+  padding: 10px 35px 0px 0px;
+  text-align: right;
+  background-color: #03045E;
+}
+
 .about { 
   display: flex;
   color: whitesmoke;
@@ -138,7 +147,7 @@ body {
 #about {
   font-size: 3.5em;
   font-family: "Archivo Black", sans-serif;
-  padding-top: 30px;
+  padding-top: 15px;
 }
 
 .a_description {

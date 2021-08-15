@@ -39,15 +39,15 @@ body {
 .site_title {
     font-family: "Archivo Black";
     font-size: 3.5em;
-    padding-top: 35px;
+    padding-top: 50px;
 }
 
 .subtitle {
-	font-size: 1.75em;
-	padding-bottom: 35px;
+	  font-size: 1.75em;
+	  padding-bottom: 45px;
 }
 
-/*Mortality report -----------------------------------*/
+/* Mortality report -----------------------------------*/
 
 .mortality_report { 
   display: flex;
@@ -64,10 +64,11 @@ body {
 
 .image1 {
   padding: 15px;
+  align-items: center;
 }
 
 .mystyle1 {
-  width: 1000px;
+  width: 800px;
 }
 
 .m_title {
@@ -83,6 +84,7 @@ body {
 }
 
 /* New New Rom Bot -----------------------------------*/
+
 .rom_bot { 
   display: flex;
   color: #00A2E2;
@@ -99,8 +101,7 @@ body {
 .r_title {
   font-size: 3.5em;
   font-family: "Archivo Black", sans-serif;
-  padding-top: 35px;
-  
+  padding-top: 35px;  
 }
 
 .r_description {
@@ -155,8 +156,25 @@ body {
   font-family: "Archivo", sans-serif;
 }
 
+/* Responsive ---------------------------------*/
+
 @media (max-width: 800px) {
-  .flex-container {
+  .body {
+    flex-direction: column;
+  }
+
+  .mortality_report { 
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rom_bot {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about {
+    display: flex;
     flex-direction: column;
   }
 }

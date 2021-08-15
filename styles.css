@@ -84,7 +84,6 @@ body {
 }
 
 /* New New Rom Bot -----------------------------------*/
-
 .rom_bot { 
   display: flex;
   color: #00A2E2;
@@ -101,7 +100,8 @@ body {
 .r_title {
   font-size: 3.5em;
   font-family: "Archivo Black", sans-serif;
-  padding-top: 35px;  
+  padding-top: 35px;
+  
 }
 
 .r_description {
@@ -141,7 +141,7 @@ body {
 }
 
 .image3 {
-  padding-left: 15px;
+  padding-left: 25px;
   margin-bottom: auto;
 }
 
@@ -177,4 +177,5 @@ body {
     display: flex;
     flex-direction: column;
   }
+
 }

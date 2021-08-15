@@ -154,3 +154,9 @@ body {
   font-size: 1.75em;
   font-family: "Archivo", sans-serif;
 }
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}

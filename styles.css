@@ -154,6 +154,7 @@ body {
 .a_description {
   font-size: 1.75em;
   font-family: "Archivo", sans-serif;
+  padding-bottom: 20px;
 }
 
 /* Responsive ---------------------------------*/

@@ -51,9 +51,8 @@ body {
 
 .mortality_report { 
   display: flex;
-  color: whitesmoke;
-  /*background-color: #00A2E2;*/
-  background-image: url("pexels-lukas-kloeppel-466685.jpg");
+  color: #03045E;
+  background-color: #00A2E2;
 }
 
 .m_content {

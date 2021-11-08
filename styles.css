@@ -43,8 +43,8 @@ body {
 }
 
 .subtitle {
-	  font-size: 1.75em;
-	  padding-bottom: 45px;
+    font-size: 1.75em;
+    padding-bottom: 45px;
 }
 
 /* Mortality report -----------------------------------*/
@@ -52,7 +52,8 @@ body {
 .mortality_report { 
   display: flex;
   color: whitesmoke;
-  background-color: #00A2E2;
+  /*background-color: #00A2E2;*/
+  background-image: url(pexels-lukas-kloeppel-466685.jpg);
 }
 
 .m_content {

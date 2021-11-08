@@ -53,7 +53,7 @@ body {
   display: flex;
   color: whitesmoke;
   /*background-color: #00A2E2;*/
-  background-image: url(pexels-lukas-kloeppel-466685.jpg);
+  background-image: url("pexels-lukas-kloeppel-466685.jpg");
 }
 
 .m_content {

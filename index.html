@@ -8,7 +8,9 @@
         <title>Harvey-Patrick</title>
     </head>
 
-    <body>
+   <body>
+
+        <div id="circle"></div>
 
         <nav id="nav_top">
             <menu class="blog"><a href="#about" style="color: whitesmoke;">about</a></menu>
@@ -27,19 +29,16 @@
         <section class="mortality_report">
           
           <img class="image1"
-            src="morty.png"
-            width="550px"
-            max-width="100%"
-            height="auto"
-            alt="mortality report landing page featuring a bar graph of borough death rates"
-            onClick="myFunction1()" id="img1">
+            src="morty.png" 
+            width="550px" 
+            alt="mortality report landing page featuring a bar graph of borough death rates">
           </img>
           
           <section class="m_content">
             <h1 class="m_title">Mortality Report</h1>
             <p class="m_description">New Yorkers can easily browse a 128-page city report on death rate by neighborhood. 
                 PDFs aren't formatted for data extraction, but I could via Ruby's PDF::Reader::Turtletext gem and slice function, 
-                to organize the raw data. Try it <a href="https://shpm.herokuapp.com" style="color: #03045E;" target="_blank">here</a>.</p>
+                to organize the raw data. Try it <a href="https://shpm.herokuapp.com" style="color: #03045E; text-decoration-color: #03045E" target="_blank">here</a>.</p>
           </section>
         </section>
 
@@ -47,16 +46,14 @@
 
           <section class="r_content">
             <h1 class="r_title">New New Rom Bot</h1>
-            <p class="r_description" >@NewNewRomBot1 is a Ruby Twitter bot that mashes up lyrics from Duran Duran, Spandau Ballet, Boy George, Flock of Seagulls and other acts from the New Romantic/New Wave early 80s. So far, it involves 100 songs. It tweets daily <a href="https://twitter.com/NewNewRomBot1" style="color: #03045E;" target="_blank">here</a>! Play with it more online, <a href="http://tidyelement.com/2020/02/14/new-new-rom-bot/" style="color: #03045E;" target="_blank">here</a>.</p>
+            <p class="r_description" >@NewNewRomBot1 is a Ruby Twitter bot that mashes up lyrics from Duran Duran, Spandau Ballet, Boy George, Flock of Seagulls and other acts from the New Romantic/New Wave early 80s. So far, it involves 100 songs. It tweets daily <a href="https://twitter.com/NewNewRomBot1" style="color: #03045E; text-decoration-color: #03045E" target="_blank">here</a>! Play with it more online, <a href="http://tidyelement.com/2020/02/14/new-new-rom-bot/" style="color: #03045E; text-decoration-color: #03045E" target="_blank">here</a>.</p>
           </section>
 
-          <img class="image2" 
-            src="rombot.png"
-            width="550px"
-            max-width="100%"
+          <img class="image2"
+            src="rombot.png" 
+            width="550px" 
             height="auto"
-            alt="Rom Bot header featuring a bird logo with an 80s hairstyle" 
-            onClick="myFunction2()" id="img2">
+            alt="Rom Bot header featuring a bird logo with an 80s hairstyle">
           </div>
         </section>
 
@@ -72,7 +69,7 @@
 
         <section class="about">
           
-          <img class="image3" src="blue_image.png" width="400px" 
+          <img class="image3" src="blue_image.png" width="300px" height="auto"
             alt="photo of Sara Harvey">
           
           <section class="a_content">
@@ -82,6 +79,15 @@
             </p>
           </section>
         </section>
+
+        <script>
+          let circle = document.getElementById('circle');
+          const onMouseMove = (e) =>{
+            circle.style.left = e.pageX + 'px';
+            circle.style.top = e.pageY + 'px';
+          }
+          document.addEventListener('mousemove', onMouseMove);
+        </script>
 
     </body>
 </html>

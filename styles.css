@@ -54,12 +54,6 @@ img {
   height: auto;
 }
 
-a {
-
-  underline: ;
-  text-decoration-color: #45CAFF;
-}
-
 a:hover {
   text-decoration: none;
 }

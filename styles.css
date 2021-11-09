@@ -8,20 +8,38 @@ body {
   padding: 0;
 }
 
-#nav {
-    display: flex;
-    flex-direction: row;
-    font-family: "Archivo", sans-serif;
-    color:  whitesmoke;
-    background-color: #03045E;
-    justify-content: flex-end;
+h1 {
+  font-family: "Archivo Black";
+  font-size: 3.5em;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
 }
 
-#nav div {
-    display: flex 1;
-    font-size: 3em;
-    padding-top: 25px;
-    padding-right: 35px;
+p {
+  font-size: 1.75em;
+  line-height: normal;
+  font-family: "Archivo", sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  font-family: "Archivo", sans-serif;
+  color:  whitesmoke;
+  background-color: #03045E;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+
+menu {
+  display: flex 1;
+  font-size: 1.5em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .header {
@@ -31,22 +49,17 @@ body {
     color: whitesmoke;
     /* dark blue */
     background-color: #03045E;
-}
-
-.header div {
-    display: flex 1;
-    padding-left: 35px;
-    padding-right: 35px;
+    line-height: 1.25em;
+    padding: 0px 30px 0px 30px;
 }
 
 .site_title {
-    font-family: "Archivo Black";
-    font-size: 4em;
-    padding-top: 70px;
+    font-size: 4.5em;
+    padding-top: 100px;
 }
 
-.subtitle {
-    font-size: 1.75em;
+.header_text {
+    margin: 0px;
     padding-bottom: 45px;
 }
 
@@ -58,17 +71,17 @@ body {
   color: #03045E;
   /* light blue */
   background-color: #45caff;
+  padding: 0px 30px 0px 30px;
 }
 
 .m_content {
   display: flex;
   flex-direction: column;
   text-align: right;
-  padding-right: 35px;
 }
 
 .image1 {
-  padding: 15px;
+  padding: 15px 15px 15px 0px;
   align-items: center;
 }
 
@@ -77,15 +90,12 @@ body {
 }
 
 .m_title {
-  font-size: 3.5em;
-  font-family: "Archivo Black", sans-serif;
-  padding-top: 35px;
+  padding-top: 25px;
 }
 
 .m_description {
-  font-size: 1.75em;
-  font-family: "Archivo", sans-serif;
   padding-bottom: 25px;
+  margin: 0;
 }
 
 /* New New Rom Bot -----------------------------------*/
@@ -94,25 +104,22 @@ body {
   /* dark blue */
   color: #03045E;
   background-color: white;
-  }
+  padding: 0px 30px 0px 30px;
+}
 
 .r_content {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding-left: 35px;
+  padding-bottom: 35px;
 }
 
 .r_title {
-  font-size: 3.5em;
-  font-family: "Archivo Black", sans-serif;
   padding-top: 35px;
-  
 }
 
-.r_description {
-  font-size: 1.75em;
-  font-family: "Archivo", sans-serif;
+.r_description {  
+  margin: 0;
 }
 
 .image2 {
@@ -121,6 +128,10 @@ body {
 
 .mystyle2 {
   width: 1000px;
+}
+
+.twitter-timeline {
+  padding: 0px 35px 0px 35px;
 }
 
 /* About -----------------------------------*/
@@ -137,29 +148,26 @@ body {
   display: flex;
   color: whitesmoke;
   background-color: #03045E;
+  padding: 0px 30px 0px 30px;
 }
 
 .a_content {
   display: flex;
   flex-direction: column;
   text-align: right;
-  padding-right: 35px;
 }
 
 .image3 {
-  padding-left: 25px;
-  margin-bottom: auto;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+  padding-right: 15px;
 }
 
 #about {
-  font-size: 3.5em;
-  font-family: "Archivo Black", sans-serif;
   padding-top: 15px;
 }
 
 .a_description {
-  font-size: 1.75em;
-  font-family: "Archivo", sans-serif;
   padding-bottom: 15px;
 }
 
@@ -183,6 +191,14 @@ body {
   .about {
     display: flex;
     flex-direction: column;
+  }
+
+  .image2 {
+    width: 100%;
+  }
+
+  .image3 {
+    padding-top: 15px;
   }
 
 }

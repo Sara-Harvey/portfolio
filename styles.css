@@ -1,11 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
-
 body {
   height: 1400px;
   margin: 0;
   padding: 0;
+  cursor: none;
+}
+
+#circle {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #C2FAFF;
+  pointer-events: none;
+  opacity: 75%;
 }
 
 h1 {
@@ -35,6 +46,22 @@ nav {
 menu {
   display: flex 1;
   font-size: 1.5em;
+  border-radius: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+
+  underline: ;
+  text-decoration-color: #45CAFF;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .header {
@@ -80,6 +107,10 @@ menu {
   align-items: center;
 }
 
+.mystyle1 {
+  width: 800px;
+}
+
 .m_title {
   padding-top: 25px;
 }
@@ -115,6 +146,10 @@ menu {
 
 .image2 {
   padding: 15px;
+}
+
+.mystyle2 {
+  width: 1000px;
 }
 
 .twitter-timeline {

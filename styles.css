@@ -37,12 +37,6 @@ menu {
   font-size: 1.5em;
 }
 
-img {
-  width: 550px;
-  max-width: 100%;
-  height: auto;
-}
-
 .header {
     display: flex;
     flex-direction: column;

@@ -90,6 +90,11 @@ a:hover {
   align-items: center;
 }
 
+.morty_image {
+  border: .5px solid #03045E;
+  box-shadow: -5px 8px 12px 6px rgba(0,0,0,0.2);
+}
+
 .m_content {
   display: flex;
   flex-direction: column;
@@ -132,6 +137,11 @@ a:hover {
 .image_wrapper_rom {
   padding: 15px;
   align-items: center;
+}
+
+.rom_image {
+  border: .5px solid #03045E;
+  box-shadow: -5px 8px 12px 6px rgba(0,0,0,0.2);
 }
 
 .twitter-timeline {
@@ -181,7 +191,7 @@ a:hover {
     flex-direction: column;
   }
 
-  .nav-top {
+  .nav_top {
     display: flex;
     flex-direction: column;
     max-width: 100%;

@@ -184,6 +184,7 @@ a:hover {
   .nav-top {
     display: flex;
     flex-direction: column;
+    max-width: 100%;
   }
   
   .mortality_report { 

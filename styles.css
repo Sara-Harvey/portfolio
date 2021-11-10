@@ -49,10 +49,12 @@ menu {
   border-radius: 10px;
 }
 
+/*
 img {
   max-width: 90%;
   height: auto;
 }
+*/
 
 a:hover {
   text-decoration: none;
@@ -142,10 +144,6 @@ a:hover {
   padding: 15px;
 }
 
-.mystyle2 {
-  width: 1000px;
-}
-
 .twitter-timeline {
   padding: 0px 35px 0px 35px;
 }
@@ -209,10 +207,10 @@ a:hover {
     flex-direction: column;
   }
 
-  .image2 {
-    width: 100%;
+  img {
+    justify-content: center;
   }
-
+  
   .image3 {
     padding-top: 15px;
   }

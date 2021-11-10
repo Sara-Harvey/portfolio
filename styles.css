@@ -14,7 +14,7 @@ body {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background-color: #C2FAFF;
+  background-color: #FD89FD;
   pointer-events: none;
   opacity: 75%;
 }
@@ -48,13 +48,6 @@ menu {
   font-size: 1.5em;
   border-radius: 10px;
 }
-
-/*
-img {
-  max-width: 90%;
-  height: auto;
-}
-*/
 
 a:hover {
   text-decoration: none;
@@ -92,19 +85,15 @@ a:hover {
   padding: 0px 30px 0px 30px;
 }
 
+.image_wrapper_morty {
+  padding: 25px 15px 15px 0px;
+  align-items: center;
+}
+
 .m_content {
   display: flex;
   flex-direction: column;
   text-align: right;
-}
-
-.image1 {
-  padding: 15px 15px 15px 0px;
-  align-items: center;
-}
-
-.mystyle1 {
-  width: 800px;
 }
 
 .m_title {
@@ -140,8 +129,9 @@ a:hover {
   margin: 0;
 }
 
-.image2 {
+.image_wrapper_rom {
   padding: 15px;
+  align-items: center;
 }
 
 .twitter-timeline {
@@ -171,8 +161,7 @@ a:hover {
   text-align: right;
 }
 
-.image3 {
-  justify-content: flex-start;
+.image_wrapper_profile {
   margin-bottom: 30px;
   padding-right: 15px;
 }
@@ -211,8 +200,7 @@ a:hover {
     justify-content: center;
   }
   
-  .image3 {
+  .image_wrapper_profile {
     padding-top: 15px;
   }
-
 }

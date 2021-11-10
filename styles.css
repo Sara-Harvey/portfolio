@@ -91,7 +91,7 @@ a:hover {
 }
 
 .morty_image {
-  border: .5px solid #03045E;
+  border: 1px solid darkgray;
   box-shadow: -5px 8px 12px 6px rgba(0,0,0,0.2);
 }
 
@@ -140,7 +140,7 @@ a:hover {
 }
 
 .rom_image {
-  border: .5px solid #03045E;
+  border: 1px solid darkgray;
   box-shadow: -5px 8px 12px 6px rgba(0,0,0,0.2);
 }
 

@@ -115,7 +115,7 @@ a:hover {
   display: flex;
   /* dark blue */
   color: #03045E;
-  background-color: white;
+  background-color: #FEC8FE;
   padding: 0px 30px 0px 30px;
 }
 
@@ -135,7 +135,7 @@ a:hover {
 }
 
 .image_wrapper_rom {
-  padding: 35px 0px 0px 15px;
+  padding: 35px 0px 25px 15px;
   align-items: center;
 }
 

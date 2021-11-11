@@ -5,7 +5,7 @@ body {
   height: 1400px;
   margin: 0;
   padding: 0;
-  cursor: none;
+  /*cursor: none;*/
 }
 
 #circle {
@@ -172,7 +172,6 @@ a:hover {
 }
 
 .image_wrapper_profile {
-  margin-bottom: 30px;
   padding-right: 15px;
 }
 

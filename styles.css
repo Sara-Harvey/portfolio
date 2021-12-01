@@ -37,7 +37,7 @@ nav {
   display: flex;
   flex-direction: row;
   font-family: "Archivo", sans-serif;
-  color:  whitesmoke;
+  color: whitesmoke;
   background-color: #03045E;
   justify-content: flex-end;
   padding-right: 40px;
@@ -91,7 +91,7 @@ a:hover {
 }
 
 .morty_image {
-  border: 1px solid darkgray;
+  border: 1px solid black;
   box-shadow: -5px 8px 12px 6px rgba(0,0,0,0.2);
 }
 
@@ -140,7 +140,7 @@ a:hover {
 }
 
 .rom_image {
-  border: 1px solid darkgray;
+  border: 1px solid black;
   box-shadow: -5px 8px 12px 6px rgba(0,0,0,0.2);
 }
 

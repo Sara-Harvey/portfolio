@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
+* {
+ color: #03045E;
+}
+
 body {
   height: 1400px;
   margin: 0;
   padding: 0;
-  /*cursor: none;*/
 }
 
 h1 {
@@ -72,8 +75,6 @@ a:hover {
 }
 
 .modal_content {
-    /* dark blue */
-  color: #03045E;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -95,7 +96,6 @@ a:hover {
 }
 
 .modal_image {
-  /*border: 1px solid black;*/
   box-shadow: -5px 8px 12px 6px rgba(0,0,0,0.2);
 }
 
@@ -104,8 +104,6 @@ a:hover {
 
 .mortality_report { 
   display: flex;
-  /* dark blue */
-  color: #03045E;
   /* light blue */
   background-color: #45caff;
   padding: 0px 30px 0px 30px;
@@ -117,7 +115,6 @@ a:hover {
 }
 
 .morty_image {
-  /*border: 1px solid black;*/
   box-shadow: -5px 8px 12px 6px rgba(0,0,0,0.2);
 }
 
@@ -137,10 +134,9 @@ a:hover {
 }
 
 /* New New Rom Bot -----------------------------------*/
+
 .rom_bot { 
   display: flex;
-  /* dark blue */
-  color: #03045E;
   background-color: #FEC8FE;
   padding: 0px 30px 0px 30px;
 }
@@ -166,7 +162,6 @@ a:hover {
 }
 
 .rom_image {
-  /*border: 1px solid black;*/
   box-shadow: -5px 8px 12px 6px rgba(0,0,0,0.2);
 }
 

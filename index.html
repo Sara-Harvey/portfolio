@@ -22,45 +22,67 @@
         <section class="header">
             <h1 class="site_title">Sara Harvey-Patrick</h1>
             <p class="header_text">is a web developer with a mind for elegant code and an eye for ingenious design. 
-                Specializing in Rails and React, she works remotely from Rochester, New York, as a frontend 
-                intern for <a href="https://www.mucktracker.com/" style="color: whitesmoke;" target="_blank">Mucktracker</a>.</p>
+                Specializing in Rails and React, she works remotely from Rochester, New York.</p>
         </section>
+
+
+        <section class="modal">
+
+          <section class="modal_content">
+            <h1 class="modal_title">React Modal</h1>
+            <p class="modal_description" >Building a modal to let users create a React object was one of the bigger tasks of my 2021 internship with the educational startup, <a href="https://www.mucktracker.com/" style="color: #03045E; text-decoration-color: #03045E" target="_blank">Mucktracker</a>. I blogged about <a href="http://tidyelement.com/2022/01/20/feedback-loop-complete-flatiron-school-to-front-end-intern/" style="color: #03045E; text-decoration-color: #03045E" target="_blank">building alongside the team</a>, and my <a href="http://tidyelement.com/2022/01/12/building-a-react-modal-with-formik-mui-textfield-and-select/" style="color: #03045E; text-decoration-color: #03045E" target="_blank">tech takeaways</a>. Check out my <a href="https://codesandbox.io/s/mystifying-browser-hsqcm" style="color: #03045E; text-decoration-color: #03045E" target="_blank">toy modal on CodeSandbox</a>, too.</p>
+          </section>
+
+          <div class="image_wrapper_modal">
+            <a href="https://codesandbox.io/s/mystifying-browser-hsqcm" target="_blank">
+            <img class="modal_image"
+                src="bruno.png" 
+                height="auto"
+                width="100%"
+                alt="Rom Bot header featuring a bird logo with an 80s hairstyle">
+            </a>
+          </div>
+
+        </section>
+
 
         <section class="mortality_report">
           
           <div class="image_wrapper_morty">
+
+            <a href="https://shpm.herokuapp.com" target="_blank">
             <img class="morty_image"
+
               src="morty.png" 
               height="auto"
-              width="100%"
-              alt="mortality report landing page featuring a bar graph of borough death rates">
-            </img>
+              width="100%">
+
+            </img></a>
           </div>
           
           <section class="m_content">
             <h1 class="m_title">Mortality Report</h1>
-            <p class="m_description">New Yorkers can easily browse a 128-page city report on death rate by neighborhood. 
-                PDFs aren't formatted for data extraction, but Ruby's PDF::Reader::Turtletext gem and slice function made it possible to 
-                organize the raw data. Visit the report on the <a href="https://shpm.herokuapp.com" style="color: #03045E; text-decoration-color: #03045E" target="_blank">web</a>.</p>
+            <p class="m_description">Lets New Yorkers easily browse a 128-page city report on death rate by neighborhood. 
+                PDFs aren't formatted for data extraction, but Ruby's PDF::Reader::Turtletext gem and slice function made it possible. Visit the report on the <a href="https://shpm.herokuapp.com" style="color: #03045E; text-decoration-color: #03045E" target="_blank">web</a>.</p>
           </section>
         </section>
 
         <section class="rom_bot">
 
           <section class="r_content">
-            <h1 class="r_title">New New Rom Bot</h1>
-            <p class="r_description" >@NewNewRomBot1 is a Ruby Twitter bot that mashes lyrics from Duran Duran, 
-                Boy George, Flock of Seagulls and other acts from the New Romantic/New Wave early 80s. 
-                It tweets daily at<a href="https://twitter.com/NewNewRomBot1" style="color: #03045E; target="_blank">@NewNewRomBot1</a>! 
-                Or visit on the <a href="https://morning-coast-39048.herokuapp.com/" style="color: #03045E;" target="_blank">web</a>.</p>
+            <h1 class="r_title">NewNewRomBot</h1>
+            <p class="r_description" ><a href="https://twitter.com/NewNewRomBot1" style="color: #03045E; text-decoration-color: #03045E" target="_blank">@NewNewRomBot1</a> is a Ruby Twitter bot that mashes lyrics from Duran Duran, 
+                Boy George, Flock of Seagulls and other acts from the New Romantic/New Wave early 1980s. Visit on Twitter, or on its <a href="https://morning-coast-39048.herokuapp.com" style="color: #03045E; text-decoration-color: #03045E" target="_blank">own site</a>.</p>
           </section>
 
           <div class="image_wrapper_rom">
+            <a href="https://twitter.com/NewNewRomBot1" style="color: #03045E; text-decoration-color: #03045E" target="_blank">
             <img class="rom_image"
                 src="rombot.png" 
                 height="auto"
                 width="100%"
                 alt="Rom Bot header featuring a bird logo with an 80s hairstyle">
+            </a>
           </div>
 
         </section>
@@ -78,7 +100,7 @@
         <section class="about">
           
           <div class="image_wrapper_profile">
-            <img class="profile_pic" src="harvey.png" width="100%" height="auto" alt="photo of Sara Harvey">
+            <img class="profile_pic" src="harvey-circle1.png" width="100%" height="auto" alt="photo of Sara Harvey">
           </div>
           
           <section class="a_content">
@@ -90,12 +112,7 @@
         </section>
 
         <script>
-          let circle = document.getElementById('circle');
-          const onMouseMove = (e) =>{
-            circle.style.left = e.pageX + 'px';
-            circle.style.top = e.pageY + 'px';
-          }
-          document.addEventListener('mousemove', onMouseMove);
+        
         </script>
 
     </body>

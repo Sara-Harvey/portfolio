@@ -5,7 +5,7 @@ body {
   height: 1400px;
   margin: 0;
   padding: 0;
- color: #03045E;
+  color: #03045E;
 }
 
 h1 {
@@ -42,7 +42,23 @@ a:hover {
   text-decoration: none;
 }
 
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.grid-1 {
+  grid-column: 1 / 4;
+  grid-row: 1 / 7;
+  background-color: #03045E;
+}
+
 .header {
+    grid-column: 1 / 4;
+    grid-row: 1 / 4.5;
+
     display: flex;
     flex-direction: column;
     font-family: "Archivo", sans-serif;
@@ -55,12 +71,37 @@ a:hover {
 
 .site_title {
     font-size: 4.5em;
-    padding-top: 100px;
+    padding-top: 20%;
+    padding-bottom: 10px;
+    animation: 1.5s 1 slideUp;
+    line-height: 90%;
 }
 
 .header_text {
     margin: 0px;
-    padding-bottom: 45px;
+    animation: 2s 1 slideUp;
+    padding-bottom: 25px;
+}
+
+.scroll-arrow {
+  font-size: 1.25em;
+  margin: 0px;
+  align-self: center;
+  animation: 2.5s linear .75s 1 slideUp;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    margin-top: 100%;
+    height: 300%; 
+  }
+  to {
+    opacity: 1;
+    margin: 0px;
+    margin-top: 0%;
+    height: 100%;
+  }
 }
 
 /* Modal ----------------------------------------------*/

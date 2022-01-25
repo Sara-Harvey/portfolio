@@ -250,25 +250,10 @@ a:hover {
     flex-direction: column;
   }
 
-  .nav_top {
+  .nav_top, .modal, .mortality_report, .rom_bot, .about {
     display: flex;
     flex-direction: column;
     max-width: 100%;
-  }
-  
-  .mortality_report { 
-    display: flex;
-    flex-direction: column;
-  }
-
-  .rom_bot {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .about {
-    display: flex;
-    flex-direction: column;
   }
 
   img {

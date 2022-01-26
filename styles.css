@@ -114,7 +114,6 @@ header {
   animation: 2.25s linear .5s 1 slideUp;
 }
 
-/*
 @keyframes slideUp {
   from {
     opacity: 0;
@@ -128,7 +127,6 @@ header {
     height: 100%;
   }
 }
-*/
 
 /* Project sections ----------------------------------------------*/
 

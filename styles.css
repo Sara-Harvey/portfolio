@@ -67,6 +67,8 @@ a:hover {
 }
 
 header {
+  grid-column: 1 / 4;
+  grid-row: 1 / 4.5;
   display: flex;
   flex-direction: column;
   color: whitesmoke;
@@ -148,7 +150,7 @@ section {
   color: whitesmoke;
 }
 
-.about.section_title {
+.about .section_title {
   color: #45caff;
 }
 
@@ -223,29 +225,21 @@ img {
     line-height: 105%;
   }
 
-  section { 
-    display: flex;
-    flex-direction: column;
-  }
-
   .section_title {
     letter-spacing: -1px;
   }
 
-  .mortality_report.section_title {
+  .mortality_report .section_title {
     padding-top: 20px;
   }
 
-  .about.image_wrapper {
+  .about .image_wrapper {
     width: 75%;
   }
-
-  .modal {
-    background: whitesmoke;
-  }
-
-  .rom_bot {
-    background: #fec8fe;
+ 
+  section { 
+    display: flex;
+    flex-direction: column;
   }
 
   .image_wrapper {

@@ -4,7 +4,8 @@ body {
   height: 1400px;
   margin: 0;
   padding: 0;
-  color: #03045E;
+  background-color: #03045e;
+  color: #03045e
 }
 
 h1 {
@@ -26,17 +27,8 @@ nav {
   flex-direction: row;
   font-family: sans-serif;
   color: whitesmoke;
-  background-color: #03045E;
   justify-content: flex-end;
-  padding-right: 40px;
-}
-
-a {  
-  color: #03045E;
-}
-
-a:hover {
-    text-decoration: none;
+  padding-right: 35px;
 }
 
 nav menu a {
@@ -49,33 +41,37 @@ nav menu a:hover {
 }
 
 menu {
-  display: flex 1;
+  display: flex;
   font-size: 1.5em;
   border-radius: 10px;
+}
+
+a {  
+  color: #03045e;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 .grid-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
   grid-auto-rows: minmax(100px, auto);
 }
 
-.grid-1 {
+.header-grid {
   grid-column: 1 / 4;
   grid-row: 1 / 7;
-  background-color: #03045E;
+  background-color: #03045e;
 }
 
-.header {
+header {
   grid-column: 1 / 4;
   grid-row: 1 / 4.5;
   display: flex;
   flex-direction: column;
-  font-family: "Archivo", sans-serif;
   color: whitesmoke;
-  /* dark blue */
-  background-color: #03045E;
   line-height: 1.25em;
   padding: 0px 30px 0px 30px;
 }
@@ -118,6 +114,7 @@ menu {
   animation: 2.25s linear .5s 1 slideUp;
 }
 
+/*
 @keyframes slideUp {
   from {
     opacity: 0;
@@ -131,168 +128,91 @@ menu {
     height: 100%;
   }
 }
+*/
 
-/* Modal ----------------------------------------------*/
+/* Project sections ----------------------------------------------*/
 
-.modal { 
+section { 
   display: flex;
-  background-color: whitesmoke;
-  padding: 0px 30px 35px 30px;
+  flex-direction: row;
+  padding: 35px 30px 35px 30px;
 }
 
-.modal_content {
+.modal {
+  background-color: whitesmoke;
+}
+
+.mortality_report {
+  /* light blue */
+  background-color: #45caff;
+}
+
+.rom_bot {
+  /* lavender */
+  background-color: #fec8fe;
+}
+
+.about { 
+  /* dark blue */
+  background-color: #03045e;
+  color: whitesmoke;
+}
+
+.about .section_title {
+  color: #45caff;
+}
+
+.content_left {
   display: flex;
   flex-direction: column;
   text-align: left;
+  padding-right: 15px;
 }
 
-.modal_title {
-  padding-top: 35px;
-  color: #03045E;
-}
-
-.image_wrapper_modal {
-  padding-top: 35px;
-  padding-left: 15px;
-  align-items: center;
-  position: relative;
-  top: 0;
-  transition: top ease 0.25s;
-}
-
-.image_wrapper_modal:hover {
-  top: -5px;
-} 
-
-.modal_image {
-  box-shadow: -5px 8px 12px 6px rgba(0,0,0,0.2);
-}
-
-
-/* Mortality report -----------------------------------*/
-
-.mortality_report { 
-  display: flex;
-  /* light blue */
-  background-color: #45caff;
-  padding: 5px 30px 25px 30px;
-}
-
-.image_wrapper_morty {
-  padding: 25px 35px 10px 0px;
-  align-items: center;
-  position: relative;
-  top: 0;
-  transition: top ease 0.25s;
-}
-
-.image_wrapper_morty:hover {
-  top: -5px;
-} 
-
-.morty_image {
-  box-shadow: -5px 8px 12px 6px rgba(0,0,0,0.2);
-}
-
-.m_content {
+.content_right {
   display: flex;
   flex-direction: column;
   text-align: right;
+  padding-left: 15px;
 }
 
-.m_title {
-  padding-top: 25px;
-}
-
-.m_description {
-  padding-bottom: 25px;
-  margin: 0;
-}
-
-/* New New Rom Bot -----------------------------------*/
-
-.rom_bot { 
-  display: flex;
-  background-color: #FEC8FE;
-  padding: 0px 30px 0px 30px;
-}
-
-.r_content {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  padding-bottom: 35px;
-}
-
-.r_title {
-  padding-top: 35px;
-}
-
-.r_description {  
-  margin: 0;
-}
-
-.image_wrapper_rom {
-  padding: 35px 0px 35px 15px;
+.image_wrapper {
   align-items: center;
   position: relative;
   top: 0;
   transition: top ease 0.25s;
 }
 
-.image_wrapper_rom:hover {
+.image_wrapper:hover {
   top: -5px;
 } 
 
-.rom_image {
+img {
+  height: auto;
+  width: 100%;
   box-shadow: -5px 8px 12px 6px rgba(0,0,0,0.2);
 }
 
 .twitter-timeline {
   padding: 0px 35px 0px 35px;
+  background-color: white;
 }
 
 /* About -----------------------------------*/
 
-.menu_link {
+#about_link {
   font-family: "Archivo", sans-serif;
   font-size: 1.5em;
   padding: 10px 35px 0px 0px;
   text-align: right;
-  background-color: #03045E;
 }
 
-.about { 
-  display: flex;
-  background-color: #03045E;
-  padding: 0px 30px 0px 30px;
-}
-
-.image_wrapper_profile {
-  padding: 0px 15px 35px 0px;
-  position: relative;
-  top: 0;
-  transition: top ease 0.25s;
-}
-
-.image_wrapper_profile:hover {
-  top: -5px;
-} 
-
-.a_content {
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-}
-
-#about {
-  padding-top: 15px;
-  color:  #45caff
-}
-
-.a_description {
-  padding-bottom: 15px;
+#about_link a {
   color: whitesmoke;
+}
+
+#about_link a:hover {
+  color: #45caff;
 }
 
 /* Responsive ---------------------------------*/
@@ -307,32 +227,33 @@ menu {
     flex-direction: column;
     max-width: 90%;
   }
-  
+
   .site_title {
-    line-height: normal;
+    padding-bottom: 15px;
+    line-height: 105%;
   }
 
-  h1 {
-    line-height: 90%;
-    padding-bottom: 10px;
+  .section_title {
+    letter-spacing: -1px;
   }
 
-  .modal, .mortality_report, .rom_bot, .about { 
+  .mortality_report .section_title {
+    padding-top: 20px;
+  }
+
+  .about .image_wrapper {
+    width: 75%;
+  }
+ 
+  section { 
     display: flex;
     flex-direction: column;
   }
 
-  .image_wrapper_modal, 
-  .image_wrapper_morty, 
-  .image_wrapper_rom, 
-  .image_wrapper_profile {
-    padding-right: 0;
-    padding-left: 0;
+  .image_wrapper {
+    padding: 0;
+    margin: 0;
     justify-self: center;
     justify-content: center;
-  }
- 
-  .image_wrapper_profile {
-    padding-top: 15px;
   }
 }

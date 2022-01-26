@@ -128,16 +128,8 @@ section {
   padding: 35px 30px 35px 30px;
 }
 
-/* Modal background animation ---------------------------*/
 .modal {
-  background: linear-gradient(to top, whitesmoke 50%, #03045e 50%);
-  background-size: 100% 200%;
-  background-position: top;
-  transition: all .75s;
-}
-
-.modal.scrolled {
-  background-position: bottom;
+  background-color: whitesmoke;
 }
 
 .mortality_report {
@@ -145,19 +137,10 @@ section {
   background-color: #45caff;
 }
 
-/* Rom Bot background animation ---------------------------*/
 .rom_bot {
   /* lavender */
-  background: linear-gradient(to top, #fec8fe 50%, #03045e 50%);
-  background-size: 100% 200%;
-  background-position: top;
-  transition: all .75s;
+  background-color: #fec8fe;
 }
-
-.rom_bot.scrolled {
-  background-position: bottom;
-}
-
 
 .about { 
   /* dark blue */

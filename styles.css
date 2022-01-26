@@ -67,8 +67,6 @@ a:hover {
 }
 
 header {
-  grid-column: 1 / 4;
-  grid-row: 1 / 4.5;
   display: flex;
   flex-direction: column;
   color: whitesmoke;
@@ -108,12 +106,6 @@ header {
   color: #45CAFF;
 }
 
-.scroll-arrow {
-  font-size: 1.25em;
-  align-self: center;
-  animation: 2.25s linear .5s 1 slideUp;
-}
-
 @keyframes slideUp {
   from {
     opacity: 0;
@@ -128,7 +120,7 @@ header {
   }
 }
 
-/* Project sections ----------------------------------------------*/
+/* Sections ----------------------------------------------*/
 
 section { 
   display: flex;
@@ -136,8 +128,16 @@ section {
   padding: 35px 30px 35px 30px;
 }
 
+/* Modal background animation ---------------------------*/
 .modal {
-  background-color: whitesmoke;
+  background: linear-gradient(to top, whitesmoke 50%, #03045e 50%);
+  background-size: 100% 200%;
+  background-position: top;
+  transition: all .75s;
+}
+
+.modal.scrolled {
+  background-position: bottom;
 }
 
 .mortality_report {
@@ -145,10 +145,19 @@ section {
   background-color: #45caff;
 }
 
+/* Rom Bot background animation ---------------------------*/
 .rom_bot {
   /* lavender */
-  background-color: #fec8fe;
+  background: linear-gradient(to top, #fec8fe 50%, #03045e 50%);
+  background-size: 100% 200%;
+  background-position: top;
+  transition: all .75s;
 }
+
+.rom_bot.scrolled {
+  background-position: bottom;
+}
+
 
 .about { 
   /* dark blue */
@@ -156,7 +165,7 @@ section {
   color: whitesmoke;
 }
 
-.about .section_title {
+.about.section_title {
   color: #45caff;
 }
 
@@ -231,21 +240,29 @@ img {
     line-height: 105%;
   }
 
+  section { 
+    display: flex;
+    flex-direction: column;
+  }
+
   .section_title {
     letter-spacing: -1px;
   }
 
-  .mortality_report .section_title {
+  .mortality_report.section_title {
     padding-top: 20px;
   }
 
-  .about .image_wrapper {
+  .about.image_wrapper {
     width: 75%;
   }
- 
-  section { 
-    display: flex;
-    flex-direction: column;
+
+  .modal {
+    background: whitesmoke;
+  }
+
+  .rom_bot {
+    background: #fec8fe;
   }
 
   .image_wrapper {

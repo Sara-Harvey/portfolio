@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@800;900&display=swap');
 
 body {
   height: 1400px;
   margin: 0;
   padding: 0;
-  color: #03045E;
+ color: #03045E;
 }
 
 h1 {
@@ -19,27 +18,32 @@ h1 {
 p {
   font-size: 1.75em;
   line-height: normal;
-  font-family: "Archivo", sans-serif;
+  font-family: sans-serif;
 }
 
 nav {
   display: flex;
   flex-direction: row;
-  font-family: "Archivo", sans-serif;
+  font-family: sans-serif;
   color: whitesmoke;
   background-color: #03045E;
   justify-content: flex-end;
   padding-right: 40px;
 }
 
+nav menu a {
+  color: whitesmoke
+}
+
+nav menu a:hover {
+  color: #45caff;
+  text-decoration: none;
+}
+
 menu {
   display: flex 1;
   font-size: 1.5em;
   border-radius: 10px;
-}
-
-a:hover {
-  text-decoration: none;
 }
 
 .grid-wrapper {
@@ -80,14 +84,31 @@ a:hover {
 .header_text {
     margin: 0px;
     animation: 2s 1 slideUp;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
+}
+
+.site_title span {
+  position: relative;
+  top: 0;
+  transition: top ease 0.25s;
+}
+
+.site_title span:hover {
+  top: -8px;
+} 
+
+.header_text span {
+  transition: ease 0.25s;
+}
+
+.header_text span:hover {
+  color: #45CAFF;
 }
 
 .scroll-arrow {
   font-size: 1.25em;
-  margin: 0px;
   align-self: center;
-  animation: 2.5s linear .75s 1 slideUp;
+  animation: 2.25s linear .5s 1 slideUp;
 }
 
 @keyframes slideUp {
@@ -109,19 +130,18 @@ a:hover {
 .modal { 
   display: flex;
   background-color: whitesmoke;
-  padding: 0px 30px 30px 30px;
+  padding: 0px 30px 35px 30px;
 }
 
 .modal_content {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding-bottom: 35px;
 }
 
 .modal_title {
   padding-top: 35px;
-  color: #0ab9ff;
+  color: #03045E;
 }
 
 .modal_description {  
@@ -129,7 +149,8 @@ a:hover {
 }
 
 .image_wrapper_modal {
-  padding: 35px 0px 25px 15px;
+  padding-top: 35px;
+  padding-left: 15px;
   align-items: center;
 }
 
@@ -148,7 +169,7 @@ a:hover {
 }
 
 .image_wrapper_morty {
-  padding: 25px 15px 15px 0px;
+  padding: 25px 35px 10px 0px;
   align-items: center;
 }
 
@@ -195,7 +216,7 @@ a:hover {
 }
 
 .image_wrapper_rom {
-  padding: 35px 0px 25px 15px;
+  padding: 35px 0px 35px 15px;
   align-items: center;
 }
 
@@ -224,7 +245,7 @@ a:hover {
 }
 
 .image_wrapper_profile {
-  padding: 0px 15px 25px 0px;
+  padding: 0px 15px 35px 0px;
 }
 
 .a_content {
@@ -250,10 +271,25 @@ a:hover {
     flex-direction: column;
   }
 
-  .nav_top, .modal, .mortality_report, .rom_bot, .about {
+  .nav_top {
     display: flex;
     flex-direction: column;
     max-width: 100%;
+  }
+  
+  .mortality_report { 
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rom_bot {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
   }
 
   img {

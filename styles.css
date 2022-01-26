@@ -31,6 +31,14 @@ nav {
   padding-right: 40px;
 }
 
+a {  
+  color: #03045E;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 nav menu a {
   color: whitesmoke
 }
@@ -111,6 +119,7 @@ menu {
   animation: 2.25s linear .5s 1 slideUp;
 }
 
+/*
 @keyframes slideUp {
   from {
     opacity: 0;
@@ -124,6 +133,7 @@ menu {
     height: 100%;
   }
 }
+*/
 
 /* Modal ----------------------------------------------*/
 
@@ -144,15 +154,18 @@ menu {
   color: #03045E;
 }
 
-.modal_description {  
-  margin: 0;
-}
-
 .image_wrapper_modal {
   padding-top: 35px;
   padding-left: 15px;
   align-items: center;
+  position: relative;
+  top: 0;
+  transition: top ease 0.25s;
 }
+
+.image_wrapper_modal:hover {
+  top: -5px;
+} 
 
 .modal_image {
   box-shadow: -5px 8px 12px 6px rgba(0,0,0,0.2);
@@ -171,7 +184,14 @@ menu {
 .image_wrapper_morty {
   padding: 25px 35px 10px 0px;
   align-items: center;
+  position: relative;
+  top: 0;
+  transition: top ease 0.25s;
 }
+
+.image_wrapper_morty:hover {
+  top: -5px;
+} 
 
 .morty_image {
   box-shadow: -5px 8px 12px 6px rgba(0,0,0,0.2);
@@ -218,7 +238,14 @@ menu {
 .image_wrapper_rom {
   padding: 35px 0px 35px 15px;
   align-items: center;
+  position: relative;
+  top: 0;
+  transition: top ease 0.25s;
 }
+
+.image_wrapper_rom:hover {
+  top: -5px;
+} 
 
 .rom_image {
   box-shadow: -5px 8px 12px 6px rgba(0,0,0,0.2);
@@ -246,7 +273,15 @@ menu {
 
 .image_wrapper_profile {
   padding: 0px 15px 35px 0px;
+  position: relative;
+  top: 0;
+  transition: top ease 0.25s;
 }
+
+.image_wrapper_profile:hover {
+  top: -5px;
+} 
+
 
 .a_content {
   display: flex;

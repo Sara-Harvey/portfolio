@@ -118,7 +118,6 @@ menu {
   animation: 2.25s linear .5s 1 slideUp;
 }
 
-/*
 @keyframes slideUp {
   from {
     opacity: 0;
@@ -132,7 +131,6 @@ menu {
     height: 100%;
   }
 }
-*/
 
 /* Modal ----------------------------------------------*/
 

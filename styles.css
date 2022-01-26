@@ -4,7 +4,7 @@ body {
   height: 1400px;
   margin: 0;
   padding: 0;
- color: #03045E;
+  color: #03045E;
 }
 
 h1 {
@@ -68,31 +68,30 @@ menu {
 }
 
 .header {
-    grid-column: 1 / 4;
-    grid-row: 1 / 4.5;
-
-    display: flex;
-    flex-direction: column;
-    font-family: "Archivo", sans-serif;
-    color: whitesmoke;
-    /* dark blue */
-    background-color: #03045E;
-    line-height: 1.25em;
-    padding: 0px 30px 0px 30px;
+  grid-column: 1 / 4;
+  grid-row: 1 / 4.5;
+  display: flex;
+  flex-direction: column;
+  font-family: "Archivo", sans-serif;
+  color: whitesmoke;
+  /* dark blue */
+  background-color: #03045E;
+  line-height: 1.25em;
+  padding: 0px 30px 0px 30px;
 }
 
 .site_title {
-    font-size: 4.5em;
-    padding-top: 20%;
-    padding-bottom: 10px;
-    animation: 1.5s 1 slideUp;
-    line-height: 90%;
+  font-size: 4.5em;
+  padding-top: 20%;
+  padding-bottom: 10px;
+  animation: 1.5s 1 slideUp;
+  line-height: 90%;
 }
 
 .header_text {
-    margin: 0px;
-    animation: 2s 1 slideUp;
-    padding-bottom: 15px;
+  margin: 0px;
+  animation: 2s 1 slideUp;
+  padding-bottom: 15px;
 }
 
 .site_title span {
@@ -282,7 +281,6 @@ menu {
   top: -5px;
 } 
 
-
 .a_content {
   display: flex;
   flex-direction: column;
@@ -309,30 +307,34 @@ menu {
   .nav_top {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
+    max-width: 90%;
   }
   
-  .mortality_report { 
+  .site_title {
+    line-height: normal;
+  }
+
+  h1 {
+    line-height: 90%;
+    padding-bottom: 10px;
+  }
+
+  .modal, .mortality_report, .rom_bot, .about { 
     display: flex;
     flex-direction: column;
   }
 
-  .rom_bot {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .about {
-    display: flex;
-    flex-direction: column;
-  }
-
-  img {
+  .image_wrapper_modal, 
+  .image_wrapper_morty, 
+  .image_wrapper_rom, 
+  .image_wrapper_profile {
+    padding-right: 0;
+    padding-left: 0;
+    justify-self: center;
     justify-content: center;
   }
-  
+ 
   .image_wrapper_profile {
     padding-top: 15px;
-    justify-content: center;
   }
 }

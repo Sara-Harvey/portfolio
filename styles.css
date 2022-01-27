@@ -226,6 +226,7 @@ a:hover {
   nav {
     display: flex;
     flex-direction: column;
+    line-height: 80%;
   }
 
    .modal { 

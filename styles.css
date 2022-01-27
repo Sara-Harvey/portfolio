@@ -1,22 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 body {
   height: 1400px;
   margin: 0;
   padding: 0;
-  /*cursor: none;*/
-}
-
-#circle {
-  position: absolute;
-  transform: translate(-50%,-50%);
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background-color: #FD89FD;
-  pointer-events: none;
-  opacity: 75%;
+  background-color: #03045e;
+  color: #03045e
 }
 
 h1 {
@@ -30,27 +19,39 @@ h1 {
 p {
   font-size: 1.75em;
   line-height: normal;
-  font-family: "Archivo", sans-serif;
+  font-family: sans-serif;
 }
 
 nav {
   display: flex;
   flex-direction: row;
-  font-family: "Archivo", sans-serif;
+  font-family: sans-serif;
   color: whitesmoke;
-  background-color: #03045E;
   justify-content: flex-end;
-  padding-right: 40px;
+  padding-right: 35px;
+}
+
+nav menu a {
+  color: whitesmoke
+}
+
+nav menu a:hover {
+  color: #45caff;
+  text-decoration: none;
 }
 
 menu {
-  display: flex 1;
+  display: flex;
   font-size: 1.5em;
   border-radius: 10px;
 }
 
+a {  
+  color: #03045e;
+}
+
 a:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .header {

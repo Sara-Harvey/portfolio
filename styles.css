@@ -201,7 +201,7 @@ img {
   color: #45caff;
 }
 
-.about.section_title {
+.about .section_title {
   color: #45caff;
 }
 
@@ -251,7 +251,7 @@ img {
     letter-spacing: -1px;
   }
 
-  .mortality_report.section_title {
+  .mortality_report .section_title {
     padding-top: 20px;
   }
 
@@ -262,7 +262,7 @@ img {
     justify-content: center;
   }
 
-  .image_wrapper.profile {
+  .image_wrapper .profile {
     padding-top: 15px;
   }
 }

@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@800;900&display=swap');
 
 body {
-  display: flex;
-  flex-direction: column;
   height: 1400px;
   margin: 0;
   padding: 0;
@@ -124,39 +122,25 @@ a:hover {
 
 /* Sections ----------------------------------------------*/
 
-.modal {
-  background-color: whitesmoke;
-  display: flex;
-  flex-direction: row;
-  padding: 35px 30px 35px 30px;
-}
+  .header, 
+  .modal, 
+  .mortality_report, 
+  .rom_bot, 
+  .about { 
+    display: flex;
+    flex-direction: row;
+    padding: 35px 30px 35px 30px;
+  }
 
-.mortality_report {
-  /* light blue */
-  background-color: #45caff;
-  display: flex;
-  flex-direction: row;
-  padding: 35px 30px 35px 30px;
-}
+.modal { background-color: whitesmoke; }
 
-.rom_bot {
-  /* lavender */
-  background-color: #fec8fe;
-  display: flex;
-  flex-direction: row;
-  padding: 35px 30px 35px 30px;
-}
+.mortality_report {  /* light blue */ background-color: #45caff; }
 
-.about { 
-  /* dark blue */
-  background-color: #03045e;
-  color: whitesmoke;
-  display: flex;
-  flex-direction: row;
-  padding: 35px 30px 35px 30px;
-}
+.rom_bot { /* lavender */ background-color: #fec8fe; }
 
-.about .section_title {
+.about { /* dark blue */ background-color: #03045e; }
+
+.about.section_title {
   color: #45caff;
 }
 
@@ -216,11 +200,6 @@ img {
 /* Responsive ---------------------------------*/
 
 @media (max-width: 800px) {
-  .body {
-    display: flex;
-    flex-direction: column;
-  }
-
   .nav_top {
     display: flex;
     flex-direction: column;

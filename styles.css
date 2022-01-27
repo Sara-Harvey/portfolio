@@ -270,6 +270,7 @@ img {
   nav {
     display: flex;
     flex-direction: column;
+    line-height: normal;
   }
   
   .modal {

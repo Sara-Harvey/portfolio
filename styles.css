@@ -122,7 +122,6 @@ a:hover {
 
 /* Sections -----------------------------------*/
 
-
 .modal { 
   display: flex;
   background-color: whitesmoke;
@@ -140,6 +139,7 @@ a:hover {
   display: flex;
   /* lavender */
   background-color: #FEC8FE;
+  padding: 35px 30px 35px 30px;
 }
 
 .about { 
@@ -181,8 +181,8 @@ img {
 
 .twitter-timeline {
   padding: 0px 35px 0px 35px;
+  background-color: white;
 }
-
 
 /* About -----------------------------------*/
 
@@ -201,6 +201,10 @@ img {
   color: #45caff;
 }
 
+.about.section_title {
+  color: #45caff;
+}
+
 /* Responsive ---------------------------------*/
 
 @media (max-width: 800px) {
@@ -216,7 +220,6 @@ img {
   }
 
   .site_title {
-    font-size: 4.5em;
     padding-top: 25px;
   }
 
@@ -244,8 +247,22 @@ img {
     justify-content: center;
   }
   
-  .image_wrapper_profile {
-    padding-top: 15px;
+  .section_title {
+    letter-spacing: -1px;
+  }
+
+  .mortality_report.section_title {
+    padding-top: 20px;
+  }
+
+  .image_wrapper {
+    padding: 0;
+    margin: 0;
+    justify-self: center;
     justify-content: center;
+  }
+
+  .image_wrapper.profile {
+    padding-top: 15px;
   }
 }

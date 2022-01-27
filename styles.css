@@ -143,6 +143,14 @@ a:hover {
 
 .about { /* dark blue */ background-color: #03045e; }
 
+.about h1 {
+  color: #45caff;
+}
+
+.about p {
+  color: whitesmoke;
+}
+
 .content_left {
   display: flex;
   flex-direction: column;

@@ -251,13 +251,13 @@ img {
     padding-top: 20px;
     display: flex;
     flex-direction: column;
-    line-height: 50%;
+    line-height: 25%;
   }
 
-.site_title {
-  font-size: 4.5em;
-  padding-top: 10%;
-}
+  .site_title {
+    font-size: 4.5em;
+    padding-top: 20px;
+  }
 
   .modal {
     display: flex;

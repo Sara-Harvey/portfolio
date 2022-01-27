@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" class="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css" />
         <title>Harvey-Patrick</title>
     </head>
@@ -11,38 +11,36 @@
    <body>
 
         <nav id="nav_top">
-            <menu><a href="#about_link">about</a></menu>
-            <menu><a href="http://tidyelement.com/" target="_blank">blog</a></menu>
-            <menu><a href="https://www.linkedin.com/in/sarabharvey/" target="_blank">LinkedIn</a></menu>
-            <menu><a href="https://github.com/Sara-Harvey" target="_blank">GitHub</a></menu>
+            <menu class="blog"><a href="#about" style="color: whitesmoke;">about</a></menu>
+            <menu><a href="http://tidyelement.com/" style="color: whitesmoke;" target="_blank">blog</a></menu>
+            <menu><a href="https://www.linkedin.com/in/sarabharvey/" style="color: whitesmoke;" target="_blank">LinkedIn</a></menu>
+            <menu><a href="https://github.com/Sara-Harvey" style="color: whitesmoke;" target="_blank">GitHub</a></menu>
         </nav>
 
-        <!-- <div class="grid-wrapper">
-          <div class="header-grid"> -->
-            
-            <section class="header">      
-              <h1 class="site_title">
-                <span class="s">S</span><span class="a1">a</span><span class="r1">r</span><span class="a2">a</span>
-                <span class="h">H</span><span class="a3">a</span><span class="r2">r</span><span class="v">v</span><span class="e">e</span><span class="y">y</span><span class="hyphen">-</span><span class="p">P</span><span class="a4">a</span><span class="t">t</span><span class="r3">r</span><span class="i">i</span><span class="c">c</span><span class="k">k</span>
-              </h1>
-
-              <p class="header_text">is a web developer with a mind for <span class="elegant">elegant code</span> and an eye for <span class="ingenious">ingenious design.</span><BR> 
-              Specializing in Rails and React, she works remotely from Rochester, New York.</p>
+        <div class="grid-wrapper">
+          <div class="grid-1">
+            <section class="header">
+              <h1 class="site_title">Sara Harvey-Patrick</h1>
+              <p class="header_text">is a web developer with a mind for elegant code and an eye for ingenious design. 
+                  Specializing in Rails and React, she works remotely from Rochester, New York.</p>
             </section>
-
-          <!--</div>
-        </div>-->
+          </div>
+        </div>
 
         <section class="modal">
 
-          <div class="content_left">
-            <h1 class="section_title">React Modal</h1>
-            <p class="description" >Building a modal for users to create a React object was one of the bigger tasks of my 2021 internship with the educational startup, <a href="https://www.mucktracker.com/" target="_blank">Mucktracker</a>. I blogged about <a href="http://tidyelement.com/2022/01/20/feedback-loop-complete-flatiron-school-to-front-end-intern/" target="_blank">building alongside the team</a>, and my <a href="http://tidyelement.com/2022/01/12/building-a-react-modal-with-formik-mui-textfield-and-select/" target="_blank">tech takeaways</a>. Check out my <a href="https://codesandbox.io/s/mystifying-browser-hsqcm" target="_blank">toy modal on CodeSandbox</a>, too.</p>
-          </div>
+          <section class="modal_content">
+            <h1 class="modal_title">React Modal</h1>
+            <p class="modal_description" >Building a modal to let users create a React object was one of the bigger tasks of my 2021 internship with the educational startup, <a href="https://www.mucktracker.com/" style="color: #03045E; text-decoration-color: #03045E" target="_blank">Mucktracker</a>. I blogged about <a href="http://tidyelement.com/2022/01/20/feedback-loop-complete-flatiron-school-to-front-end-intern/" style="color: #03045E; text-decoration-color: #03045E" target="_blank">building alongside the team</a>, and my <a href="http://tidyelement.com/2022/01/12/building-a-react-modal-with-formik-mui-textfield-and-select/" style="color: #03045E; text-decoration-color: #03045E" target="_blank">tech takeaways</a>. Check out my <a href="https://codesandbox.io/s/mystifying-browser-hsqcm" style="color: #03045E; text-decoration-color: #03045E" target="_blank">toy modal on CodeSandbox</a>, too.</p>
+          </section>
 
-          <div class="image_wrapper">
+          <div class="image_wrapper_modal">
             <a href="https://codesandbox.io/s/mystifying-browser-hsqcm" target="_blank">
-            <img src="bruno1.png" alt="screenshot of toy modal">
+            <img class="modal_image"
+                src="bruno1.png" 
+                height="auto"
+                width="100%"
+                alt="screenshot of toy modal">
             </a>
           </div>
 
@@ -51,31 +49,39 @@
 
         <section class="mortality_report">
           
-          <div class="image_wrapper">
+          <div class="image_wrapper_morty">
+
             <a href="https://shpm.herokuapp.com" target="_blank">
-            <img src="morty.png" alt="screenshot of interactive report">
+            <img class="morty_image"
+
+              src="morty.png" 
+              height="auto"
+              width="100%">
+
             </img></a>
           </div>
           
-          <div class="content_right">
-            <h1 class="section_title">Mortality Report</h1>
-            <p class="description">Lets citizens easily browse a 128-page city report on death rate by NYC neighborhood. 
-                PDFs aren't formatted for data extraction, but Ruby's PDF::Reader::Turtletext gem and slice function made it possible. Visit the <a href="https://shpm.herokuapp.com" target="_blank">interactive report</a>.</p>
-          </div>
+          <section class="m_content">
+            <h1 class="m_title">Mortality Report</h1>
+            <p class="m_description">Lets New Yorkers easily browse a 128-page city report on death rate by neighborhood. 
+                PDFs aren't formatted for data extraction, but Ruby's PDF::Reader::Turtletext gem and slice function made it possible. Visit the report on the <a href="https://shpm.herokuapp.com" style="color: #03045E; text-decoration-color: #03045E" target="_blank">web</a>.</p>
+          </section>
         </section>
 
         <section class="rom_bot">
 
-          <div class="content_left">
-            <h1 class="section_title">New New Rom Bot</h1>
-            <p class="description" ><a href="https://twitter.com/NewNewRomBot1" target="_blank">@NewNewRomBot1</a> is a Ruby Twitter bot that mashes up lyrics from Duran Duran, 
-            Boy George, Flock of Seagulls and other acts from the New Romantic/New Wave early '80s. Visit on Twitter, or the retro <a href="https://morning-coast-39048.herokuapp.com" target="_blank">web app</a>.</p>
-          </div>
+          <section class="r_content">
+            <h1 class="r_title">New New Rom Bot</h1>
+            <p class="r_description" ><a href="https://twitter.com/NewNewRomBot1" style="color: #03045E; text-decoration-color: #03045E" target="_blank">@NewNewRomBot1</a> is a Ruby Twitter bot that mashes lyrics from Duran Duran, 
+                Boy George, Flock of Seagulls and other acts from the New Romantic/New Wave early 1980s. Visit on Twitter, or on its <a href="https://morning-coast-39048.herokuapp.com" style="color: #03045E; text-decoration-color: #03045E" target="_blank">own site</a>.</p>
+          </section>
 
-          <div class="image_wrapper">
-            <a href="https://twitter.com/NewNewRomBot1" target="_blank">
-            <img
+          <div class="image_wrapper_rom">
+            <a href="https://twitter.com/NewNewRomBot1" style="color: #03045E; text-decoration-color: #03045E" target="_blank">
+            <img class="rom_image"
                 src="rombot.png" 
+                height="auto"
+                width="100%"
                 alt="Rom Bot header featuring a bird logo with an 80s hairstyle">
             </a>
           </div>
@@ -90,21 +96,25 @@
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
 
-        <div id="about_link"><a href="#nav_top">top</a></div>
+        <div class="menu_link"><a href="#nav_top" style="color: whitesmoke;">top</a></div>
 
         <section class="about">
           
-          <div class="image_wrapper">
-            <img src="harvey-circle1.png" alt="photo of Sara Harvey" style="box-shadow: none">
+          <div class="image_wrapper_profile">
+            <img class="profile_pic" src="harvey-circle1.png" width="100%" height="auto" alt="photo of Sara Harvey">
           </div>
           
-          <div class="content_right">
-            <h1 class="section_title">About</h1>
-            <p class="description">Sara Harvey is a former journalist, inspired to build apps while handling digital 
+          <section class="a_content">
+            <h1 id="about">About</h1>
+            <p class="a_description">Sara Harvey is a former journalist, inspired to build apps while handling digital 
                 media for SUNY Downstate in Brooklyn, New York. For fun, she draws comics and runs half-marathons through the woods.
             </p>
-          </div>
+          </section>
         </section>
+
+        <script>
+        
+        </script>
 
     </body>
 </html>

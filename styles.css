@@ -129,11 +129,25 @@ a:hover {
   padding: 35px 30px 35px 30px;
 }
 
+.mortality_report { 
+  display: flex;
+  /* light blue */
+  background-color: #45caff;
+  padding: 35px 30px 35px 30px;
+}
+
 .content_left {
   display: flex;
   flex-direction: column;
   text-align: left;
   padding-right: 15px;
+}
+
+.content_right {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding-left: 15px;
 }
 
 .image_wrapper {
@@ -153,40 +167,6 @@ img {
   box-shadow: -5px 8px 12px 6px rgba(0,0,0,0.2);
 }
 
-/* Mortality report -----------------------------------*/
-
-.mortality_report { 
-  display: flex;
-  /* dark blue */
-  color: #03045E;
-  /* light blue */
-  background-color: #45caff;
-  padding: 0px 30px 0px 30px;
-}
-
-.image_wrapper_morty {
-  padding: 25px 15px 15px 0px;
-  align-items: center;
-}
-
-.morty_image {
-  box-shadow: -5px 8px 12px 6px rgba(0,0,0,0.2);
-}
-
-.m_content {
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-}
-
-.m_title {
-  padding-top: 25px;
-}
-
-.m_description {
-  padding-bottom: 25px;
-  margin: 0;
-}
 
 /* New New Rom Bot -----------------------------------*/
 .rom_bot { 
@@ -268,11 +248,17 @@ img {
   }
 
   nav {
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
-    line-height: normal;
+    line-height: 50%;
   }
-  
+
+.site_title {
+  font-size: 4.5em;
+  padding-top: 10%;
+}
+
   .modal {
     display: flex;
     flex-direction: column;

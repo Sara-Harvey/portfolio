@@ -124,30 +124,36 @@ a:hover {
 
 /* Sections ----------------------------------------------*/
 
-section { 
+.modal {
+  background-color: whitesmoke;
   display: flex;
   flex-direction: row;
   padding: 35px 30px 35px 30px;
 }
 
-.modal {
-  background-color: whitesmoke;
-}
-
 .mortality_report {
   /* light blue */
   background-color: #45caff;
+  display: flex;
+  flex-direction: row;
+  padding: 35px 30px 35px 30px;
 }
 
 .rom_bot {
   /* lavender */
   background-color: #fec8fe;
+  display: flex;
+  flex-direction: row;
+  padding: 35px 30px 35px 30px;
 }
 
 .about { 
   /* dark blue */
   background-color: #03045e;
   color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  padding: 35px 30px 35px 30px;
 }
 
 .about .section_title {

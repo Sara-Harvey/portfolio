@@ -126,7 +126,7 @@ a:hover {
 
 /* Sections ----------------------------------------------*/
 
-  .modal, 
+  .modal,
   .mortality_report, 
   .rom_bot, 
   .about { 
@@ -227,9 +227,21 @@ img {
     line-height: 105%;
   }
 
-  .modal, 
-  .mortality_report, 
-  .rom_bot, 
+  section.modal {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .rombot {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  section .mortality_report {
+     display: flex;
+    flex-direction: column;
+  }
+  
   .about { 
     display: flex;
     flex-direction: column;

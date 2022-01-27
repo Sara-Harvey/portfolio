@@ -271,8 +271,14 @@ a:hover {
   nav {
     display: flex;
     flex-direction: column;
+    line-height: 80%;
   }
-  
+
+  .site_title {
+    font-size: 4em;
+    padding-top: 10%;
+  }
+    
   .mortality_report { 
     display: flex;
     flex-direction: column;

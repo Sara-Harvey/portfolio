@@ -136,6 +136,18 @@ a:hover {
   padding: 35px 30px 35px 30px;
 }
 
+.rom_bot { 
+  display: flex;
+  /* lavender */
+  background-color: #FEC8FE;
+}
+
+.about { 
+  display: flex;
+  color: whitesmoke;
+  padding: 0px 30px 0px 30px;
+}
+
 .content_left {
   display: flex;
   flex-direction: column;
@@ -167,77 +179,26 @@ img {
   box-shadow: -5px 8px 12px 6px rgba(0,0,0,0.2);
 }
 
-
-/* New New Rom Bot -----------------------------------*/
-.rom_bot { 
-  display: flex;
-  /* dark blue */
-  color: #03045E;
-  background-color: #FEC8FE;
-  padding: 0px 30px 0px 30px;
-}
-
-.r_content {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  padding-bottom: 35px;
-}
-
-.r_title {
-  padding-top: 35px;
-}
-
-.r_description {  
-  margin: 0;
-}
-
-.image_wrapper_rom {
-  padding: 35px 0px 25px 15px;
-  align-items: center;
-}
-
-.rom_image {
-  box-shadow: -5px 8px 12px 6px rgba(0,0,0,0.2);
-}
-
 .twitter-timeline {
   padding: 0px 35px 0px 35px;
 }
 
+
 /* About -----------------------------------*/
 
-.menu_link {
-  font-family: "Archivo", sans-serif;
+#about_link {
+  font-family: "Archivo Black", sans-serif;
   font-size: 1.5em;
   padding: 10px 35px 0px 0px;
   text-align: right;
-  background-color: #03045E;
 }
 
-.about { 
-  display: flex;
+#about_link a {
   color: whitesmoke;
-  background-color: #03045E;
-  padding: 0px 30px 0px 30px;
 }
 
-.a_content {
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-}
-
-.image_wrapper_profile {
-  padding-right: 15px;
-}
-
-#about {
-  padding-top: 15px;
-}
-
-.a_description {
-  padding-bottom: 15px;
+#about_link a:hover {
+  color: #45caff;
 }
 
 /* Responsive ---------------------------------*/
@@ -256,7 +217,7 @@ img {
 
   .site_title {
     font-size: 4.5em;
-    padding-top: 20px;
+    padding-top: 25px;
   }
 
   .modal {

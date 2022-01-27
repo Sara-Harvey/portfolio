@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@800;900&display=swap');
 
 body {
+  display: flex;
   height: 1400px;
   margin: 0;
   padding: 0;
@@ -82,12 +83,6 @@ a:hover {
   line-height: 90%;
 }
 
-.header_text {
-  margin: 0px;
-  animation: 2s 1 slideUp;
-  padding-bottom: 15px;
-}
-
 .site_title span {
   position: relative;
   top: 0;
@@ -97,6 +92,12 @@ a:hover {
 .site_title span:hover {
   top: -8px;
 } 
+
+.header_text {
+  margin: 0px;
+  animation: 2s 1 slideUp;
+  padding-bottom: 15px;
+}
 
 .header_text span {
   transition: ease 0.25s;
@@ -122,13 +123,11 @@ a:hover {
 
 /* Sections ----------------------------------------------*/
 
-  .header, 
   .modal, 
   .mortality_report, 
   .rom_bot, 
   .about { 
     display: flex;
-    flex-direction: row;
     padding: 35px 30px 35px 30px;
   }
 
@@ -211,7 +210,6 @@ img {
     line-height: 105%;
   }
 
-  .header, 
   .modal, 
   .mortality_report, 
   .rom_bot, 

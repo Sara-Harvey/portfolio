@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@800;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 body {
-  display: flex;
-  flex-direction: column;
   height: 1400px;
   margin: 0;
   padding: 0;
-  background-color: #03045e;
-  color: #03045e
+  color: #03045E;
 }
 
 h1 {
@@ -21,93 +19,75 @@ h1 {
 p {
   font-size: 1.75em;
   line-height: normal;
-  font-family: sans-serif;
+  font-family: "Archivo", sans-serif;
 }
-
- /* Nav bar ----------------------------------------------*/
 
 nav {
   display: flex;
   flex-direction: row;
-  font-family: sans-serif;
+  font-family: "Archivo", sans-serif;
   color: whitesmoke;
+  background-color: #03045E;
   justify-content: flex-end;
-  padding-right: 35px;
-}
-
-nav menu a {
-  color: whitesmoke
-}
-
-nav menu a:hover {
-  color: #45caff;
-  text-decoration: none;
+  padding-right: 40px;
 }
 
 menu {
-  display: flex;
+  display: flex 1;
   font-size: 1.5em;
   border-radius: 10px;
 }
 
-a {  
-  color: #03045e;
-}
-
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .grid-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
   grid-auto-rows: minmax(100px, auto);
 }
 
-.header-grid {
+.grid-1 {
   grid-column: 1 / 4;
   grid-row: 1 / 7;
-  background-color: #03045e;
+  background-color: #03045E;
 }
 
 .header {
-  display: flex;
-  flex-direction: column;
-  color: whitesmoke;
-  line-height: 1.25em;
-  padding: 0px 30px 0px 30px;
+    grid-column: 1 / 4;
+    grid-row: 1 / 4.5;
+
+    display: flex;
+    flex-direction: column;
+    font-family: "Archivo", sans-serif;
+    color: whitesmoke;
+    /* dark blue */
+    background-color: #03045E;
+    line-height: 1.25em;
+    padding: 0px 30px 0px 30px;
 }
 
 .site_title {
-  font-size: 4.5em;
-  padding-top: 20%;
-  padding-bottom: 10px;
-  animation: 1.5s 1 slideUp;
-  line-height: 90%;
+    font-size: 4.5em;
+    padding-top: 20%;
+    padding-bottom: 10px;
+    animation: 1.5s 1 slideUp;
+    line-height: 90%;
 }
-
-.site_title span {
-  position: relative;
-  top: 0;
-  transition: top ease 0.25s;
-}
-
-.site_title span:hover {
-  top: -8px;
-} 
 
 .header_text {
+    margin: 0px;
+    animation: 2s 1 slideUp;
+    padding-bottom: 25px;
+}
+
+.scroll-arrow {
+  font-size: 1.25em;
   margin: 0px;
-  animation: 2s 1 slideUp;
-  padding-bottom: 15px;
-}
-
-.header_text span {
-  transition: ease 0.25s;
-}
-
-.header_text span:hover {
-  color: #45CAFF;
+  align-self: center;
+  animation: 2.5s linear .75s 1 slideUp;
 }
 
 @keyframes slideUp {
@@ -124,127 +104,164 @@ a:hover {
   }
 }
 
-/* Sections ----------------------------------------------*/
+/* Modal ----------------------------------------------*/
 
-section { 
-    display: flex;
-    flex-direction: row;
-    padding: 35px 30px 35px 30px;
-  }
-
-.modal { background-color: whitesmoke; }
-
-.mortality_report {  /* light blue */ background-color: #45caff; }
-
-.rom_bot { /* lavender */ background-color: #fec8fe; }
-
-.about { /* dark blue */ background-color: #03045e; }
-
-.about h1 {
-  color: #45caff;
+.modal { 
+  display: flex;
+  background-color: whitesmoke;
+  padding: 0px 30px 0px 30px;
 }
 
-.about p {
-  color: whitesmoke;
-}
-
-.content_left {
+.modal_content {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding-right: 15px;
+  padding-bottom: 35px;
 }
 
-.content_right {
+.modal_title {
+  padding-top: 35px;
+  color: #0ab9ff;
+}
+
+.modal_description {  
+  margin: 0;
+}
+
+.image_wrapper_modal {
+  padding: 35px 0px 25px 15px;
+  align-items: center;
+}
+
+.modal_image {
+  box-shadow: -5px 8px 12px 6px rgba(0,0,0,0.2);
+}
+
+
+/* Mortality report -----------------------------------*/
+
+.mortality_report { 
+  display: flex;
+  /* light blue */
+  background-color: #45caff;
+  padding: 0px 30px 0px 30px;
+}
+
+.image_wrapper_morty {
+  padding: 25px 15px 15px 0px;
+  align-items: center;
+}
+
+.morty_image {
+  box-shadow: -5px 8px 12px 6px rgba(0,0,0,0.2);
+}
+
+.m_content {
   display: flex;
   flex-direction: column;
   text-align: right;
-  padding-left: 15px;
 }
 
-.image_wrapper {
+.m_title {
+  padding-top: 25px;
+}
+
+.m_description {
+  padding-bottom: 25px;
+  margin: 0;
+}
+
+/* New New Rom Bot -----------------------------------*/
+
+.rom_bot { 
+  display: flex;
+  background-color: #FEC8FE;
+  padding: 0px 30px 0px 30px;
+}
+
+.r_content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-bottom: 35px;
+}
+
+.r_title {
+  padding-top: 35px;
+}
+
+.r_description {  
+  margin: 0;
+}
+
+.image_wrapper_rom {
+  padding: 35px 0px 25px 15px;
   align-items: center;
-  position: relative;
-  top: 0;
-  transition: top ease 0.25s;
 }
 
-.image_wrapper:hover {
-  top: -5px;
-} 
-
-img {
-  height: auto;
-  width: 100%;
+.rom_image {
   box-shadow: -5px 8px 12px 6px rgba(0,0,0,0.2);
 }
 
 .twitter-timeline {
   padding: 0px 35px 0px 35px;
-  background-color: white;
 }
 
 /* About -----------------------------------*/
 
-#about_link {
+.menu_link {
   font-family: "Archivo", sans-serif;
   font-size: 1.5em;
   padding: 10px 35px 0px 0px;
   text-align: right;
+  background-color: #03045E;
 }
 
-#about_link a {
+.about { 
+  display: flex;
+  background-color: #03045E;
+  padding: 0px 30px 0px 30px;
+}
+
+.image_wrapper_profile {
+  padding: 0px 15px 25px 0px;
+}
+
+.a_content {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+#about {
+  padding-top: 15px;
+  color:  #45caff
+}
+
+.a_description {
+  padding-bottom: 15px;
   color: whitesmoke;
-}
-
-#about_link a:hover {
-  color: #45caff;
-}
-
-.about.section_title {
-  color: #45caff;
 }
 
 /* Responsive ---------------------------------*/
 
 @media (max-width: 800px) {
   .body {
-    display: flex;
     flex-direction: column;
   }
-  
-  .nav_top {
+
+  .nav_top, .modal, .mortality_report, .rom_bot, .about {
     display: flex;
     flex-direction: column;
-    max-width: 90%;
+    max-width: 100%;
   }
 
-  .site_title {
-    padding-bottom: 15px;
-    line-height: 105%;
-  }
-
-  section {
-    display: flex;
-    flex-direction: column;
+  img {
+    justify-content: center;
   }
   
-  .section_title {
-    letter-spacing: -1px;
-  }
-
-  .mortality_report.section_title {
-    padding-top: 20px;
-  }
-
-  .about.image_wrapper {
-    padding: 20px;
-  }
-  
-  .image_wrapper {
-    padding: 0;
-    margin: 0;
-    justify-self: center;
+  .image_wrapper_profile {
+    padding-top: 15px;
     justify-content: center;
   }
 }

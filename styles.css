@@ -24,6 +24,8 @@ p {
   font-family: sans-serif;
 }
 
+ /* Nav bar ----------------------------------------------*/
+
 nav {
   display: flex;
   flex-direction: row;
@@ -129,6 +131,7 @@ a:hover {
   .rom_bot, 
   .about { 
     display: flex;
+    flex-direction: row;
     padding: 35px 30px 35px 30px;
   }
 
@@ -139,10 +142,6 @@ a:hover {
 .rom_bot { /* lavender */ background-color: #fec8fe; }
 
 .about { /* dark blue */ background-color: #03045e; }
-
-.about.section_title {
-  color: #45caff;
-}
 
 .content_left {
   display: flex;
@@ -194,6 +193,10 @@ img {
 }
 
 #about_link a:hover {
+  color: #45caff;
+}
+
+.about.section_title {
   color: #45caff;
 }
 

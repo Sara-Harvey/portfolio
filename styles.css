@@ -54,25 +54,70 @@ a:hover {
     text-decoration: none;
 }
 
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.header-grid {
+  grid-column: 1 / 4;
+  grid-row: 1 / 7;
+  background-color: #03045e;
+}
+
 .header {
-    display: flex;
-    flex-direction: column;
-    font-family: "Archivo", sans-serif;
-    color: whitesmoke;
-    /* dark blue */
-    background-color: #03045E;
-    line-height: 1.25em;
-    padding: 0px 30px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  line-height: 1.25em;
+  padding: 0px 30px 0px 30px;
 }
 
 .site_title {
-    font-size: 4.5em;
-    padding-top: 100px;
+  font-size: 4.5em;
+  padding-top: 20%;
+  padding-bottom: 10px;
+  animation: 1.5s 1 slideUp;
+  line-height: 90%;
 }
 
 .header_text {
+  margin: 0px;
+  animation: 2s 1 slideUp;
+  padding-bottom: 15px;
+}
+
+.site_title span {
+  position: relative;
+  top: 0;
+  transition: top ease 0.25s;
+}
+
+.site_title span:hover {
+  top: -8px;
+} 
+
+.header_text span {
+  transition: ease 0.25s;
+}
+
+.header_text span:hover {
+  color: #45CAFF;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    margin-top: 100%;
+    height: 300%; 
+  }
+  to {
+    opacity: 1;
     margin: 0px;
-    padding-bottom: 45px;
+    margin-top: 0%;
+    height: 100%;
+  }
 }
 
 /* Modal -----------------------------------*/
@@ -224,12 +269,6 @@ a:hover {
   }
 
   nav {
-    display: flex;
-    flex-direction: column;
-    line-height: 80%;
-  }
-
-   .modal { 
     display: flex;
     flex-direction: column;
   }
